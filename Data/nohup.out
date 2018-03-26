@@ -1,0 +1,265 @@
+[I 21:40:59.296 NotebookApp] JupyterLab alpha preview extension loaded from /home/ubuntu/anaconda3/lib/python3.6/site-packages/jupyterlab
+JupyterLab v0.27.0
+Known labextensions:
+[I 21:40:59.298 NotebookApp] Running the core application with no additional extensions or settings
+[I 21:40:59.302 NotebookApp] Serving notebooks from local directory: /home/ubuntu
+[I 21:40:59.302 NotebookApp] 0 active kernels 
+[I 21:40:59.302 NotebookApp] The Jupyter Notebook is running at: https://[all ip addresses on your system]:8888/
+[I 21:40:59.302 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 21:41:13.715 NotebookApp] delete /NYC_Traffic_Analysis_Using_Taxi_Data/Data/file.gz
+[I 21:41:16.088 NotebookApp] Kernel started: c67ddfe5-6c5e-4fbe-bf52-7a602a834722
+[I 21:41:17.069 NotebookApp] Adapting to protocol v5.1 for kernel c67ddfe5-6c5e-4fbe-bf52-7a602a834722
+[I 21:43:16.945 NotebookApp] Saving file at /NYC_Traffic_Analysis_Using_Taxi_Data/Data/Untitled.ipynb
+[I 21:44:06.772 NotebookApp] Kernel interrupted: c67ddfe5-6c5e-4fbe-bf52-7a602a834722
+[I 21:45:16.095 NotebookApp] Saving file at /NYC_Traffic_Analysis_Using_Taxi_Data/Data/Untitled.ipynb
+[I 22:01:16.913 NotebookApp] Saving file at /NYC_Traffic_Analysis_Using_Taxi_Data/Data/Untitled.ipynb
+[E 22:01:16.930 NotebookApp] Error while saving file: NYC_Traffic_Analysis_Using_Taxi_Data/Data/Untitled.ipynb database or disk is full
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 421, in save
+        self.check_and_sign(nb, path)
+      File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 440, in check_and_sign
+        self.notary.sign(nb)
+      File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/nbformat/sign.py", line 449, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/nbformat/sign.py", line 211, in store_signature
+        """, (algorithm, digest, datetime.utcnow())
+    sqlite3.OperationalError: database or disk is full
+[W 22:01:16.936 NotebookApp] Unexpected error while saving file: NYC_Traffic_Analysis_Using_Taxi_Data/Data/Untitled.ipynb database or disk is full
+[E 22:01:16.936 NotebookApp] {
+      "Host": "ec2-54-193-57-243.us-west-1.compute.amazonaws.com:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "8733",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "https://ec2-54-193-57-243.us-west-1.compute.amazonaws.com:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|24b51030|33a37134f911ed869ef55035162f8836|1521230454",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.162 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "https://ec2-54-193-57-243.us-west-1.compute.amazonaws.com:8888/notebooks/NYC_Traffic_Analysis_Using_Taxi_Data/Data/Untitled.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7",
+      "Cookie": "_xsrf=2|24b51030|33a37134f911ed869ef55035162f8836|1521230454; username-ec2-54-193-57-243-us-west-1-compute-amazonaws-com-8888=\"2|1:0|10:1521230555|63:username-ec2-54-193-57-243-us-west-1-compute-amazonaws-com-8888|44:N2QzM2VmYzc3NTFiNDNlNjkyMThkYjYyYjNlZWU5MzQ=|0f0e04669d052d64b40a9b9f9b2ef7ba705ffe17fdb8e5c65bf99d666d96b415\""
+    }
+[E 22:01:16.937 NotebookApp] 500 PUT /api/contents/NYC_Traffic_Analysis_Using_Taxi_Data/Data/Untitled.ipynb (69.38.215.124) 32.17ms referer=https://ec2-54-193-57-243.us-west-1.compute.amazonaws.com:8888/notebooks/NYC_Traffic_Analysis_Using_Taxi_Data/Data/Untitled.ipynb
+[I 22:03:16.907 NotebookApp] Saving file at /NYC_Traffic_Analysis_Using_Taxi_Data/Data/Untitled.ipynb
+[E 22:03:16.908 NotebookApp] Error while saving file: NYC_Traffic_Analysis_Using_Taxi_Data/Data/Untitled.ipynb database or disk is full
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 421, in save
+        self.check_and_sign(nb, path)
+      File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 440, in check_and_sign
+        self.notary.sign(nb)
+      File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/nbformat/sign.py", line 449, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/nbformat/sign.py", line 211, in store_signature
+        """, (algorithm, digest, datetime.utcnow())
+    sqlite3.OperationalError: database or disk is full
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 421, in save
+    self.check_and_sign(nb, path)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 440, in check_and_sign
+    self.notary.sign(nb)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/nbformat/sign.py", line 449, in sign
+    self.store.store_signature(signature, self.algorithm)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/nbformat/sign.py", line 211, in store_signature
+    """, (algorithm, digest, datetime.utcnow())
+sqlite3.OperationalError: database or disk is full
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/base/handlers.py", line 516, in wrapper
+    result = yield gen.maybe_future(method(self, *args, **kwargs))
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 1055, in run
+    value = future.result()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/concurrent.py", line 238, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 4, in raise_exc_info
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 1063, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/services/contents/handlers.py", line 242, in put
+    yield gen.maybe_future(self._save(model, path))
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 1055, in run
+    value = future.result()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/concurrent.py", line 238, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 4, in raise_exc_info
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 307, in wrapper
+    yielded = next(result)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/services/contents/handlers.py", line 182, in _save
+    model = yield gen.maybe_future(self.contents_manager.save(model, path))
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/services/contents/largefilemanager.py", line 46, in save
+    return super(LargeFileManager, self).save(model, path)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 437, in save
+    raise web.HTTPError(500, u'Unexpected error while saving file: %s %s' % (path, e))
+tornado.web.HTTPError: HTTP 500: Internal Server Error (Unexpected error while saving file: NYC_Traffic_Analysis_Using_Taxi_Data/Data/Untitled.ipynb database or disk is full)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/lib/python3.6/logging/__init__.py", line 996, in emit
+    self.flush()
+  File "/home/ubuntu/anaconda3/lib/python3.6/logging/__init__.py", line 976, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/home/ubuntu/anaconda3/bin/jupyter-notebook", line 11, in <module>
+    sys.exit(main())
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/jupyter_core/application.py", line 267, in launch_instance
+    return super(JupyterApp, cls).launch_instance(argv=argv, **kwargs)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/traitlets/config/application.py", line 658, in launch_instance
+    app.start()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/notebookapp.py", line 1417, in start
+    self.io_loop.start()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/zmq/eventloop/ioloop.py", line 177, in start
+    super(ZMQIOLoop, self).start()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/ioloop.py", line 832, in start
+    self._run_callback(self._callbacks.popleft())
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/ioloop.py", line 605, in _run_callback
+    ret = callback()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/stack_context.py", line 277, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 1152, in inner
+    self.run()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 1069, in run
+    yielded = self.gen.send(value)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/http1connection.py", line 238, in _read_message
+    delegate.finish()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/routing.py", line 251, in finish
+    self.delegate.finish()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/web.py", line 2096, in finish
+    self.execute()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/web.py", line 2129, in execute
+    **self.path_kwargs)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 307, in wrapper
+    yielded = next(result)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 319, in wrapper
+    _futures_to_runners[future] = Runner(result, future, yielded)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 1003, in __init__
+    self.run()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 1063, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/base/handlers.py", line 524, in wrapper
+    self.finish(json.dumps(reply))
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/base/handlers.py", line 449, in finish
+    return super(APIHandler, self).finish(*args, **kwargs)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/web.py", line 993, in finish
+    self._log()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/web.py", line 1540, in _log
+    self.application.log_request(self)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/web.py", line 2053, in log_request
+    self.settings["log_function"](handler)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/log.py", line 47, in log_request
+    log_method(msg.format(**ns))
+Message: '500 PUT /api/contents/NYC_Traffic_Analysis_Using_Taxi_Data/Data/Untitled.ipynb (69.38.215.124) 44.80ms referer=https://ec2-54-193-57-243.us-west-1.compute.amazonaws.com:8888/notebooks/NYC_Traffic_Analysis_Using_Taxi_Data/Data/Untitled.ipynb'
+Arguments: ()
+[I 22:14:45.334 NotebookApp] Adapting to protocol v5.1 for kernel c67ddfe5-6c5e-4fbe-bf52-7a602a834722
+[I 22:16:45.231 NotebookApp] Saving file at /NYC_Traffic_Analysis_Using_Taxi_Data/Data/Untitled.ipynb
+[I 22:38:45.848 NotebookApp] Saving file at /NYC_Traffic_Analysis_Using_Taxi_Data/Data/GettingData.ipynb
+[E 22:38:45.863 NotebookApp] Error while saving file: NYC_Traffic_Analysis_Using_Taxi_Data/Data/GettingData.ipynb database or disk is full
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 421, in save
+        self.check_and_sign(nb, path)
+      File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 440, in check_and_sign
+        self.notary.sign(nb)
+      File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/nbformat/sign.py", line 449, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/nbformat/sign.py", line 211, in store_signature
+        """, (algorithm, digest, datetime.utcnow())
+    sqlite3.OperationalError: database or disk is full
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/base/handlers.py", line 516, in wrapper
+    result = yield gen.maybe_future(method(self, *args, **kwargs))
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 1055, in run
+    value = future.result()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/concurrent.py", line 238, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 4, in raise_exc_info
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 307, in wrapper
+    yielded = next(result)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/services/contents/handlers.py", line 124, in get
+    path=path, type=type, format=format, content=content,
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 384, in get
+    model = self._notebook_model(path, content=content)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 344, in _notebook_model
+    self.mark_trusted_cells(nb, path)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/services/contents/manager.py", line 456, in mark_trusted_cells
+    trusted = self.notary.check_signature(nb)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/nbformat/sign.py", line 439, in check_signature
+    return self.store.check_signature(signature, self.algorithm)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/nbformat/sign.py", line 239, in check_signature
+    (datetime.utcnow(), algorithm, digest),
+sqlite3.OperationalError: database or disk is full
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/lib/python3.6/logging/__init__.py", line 996, in emit
+    self.flush()
+  File "/home/ubuntu/anaconda3/lib/python3.6/logging/__init__.py", line 976, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/home/ubuntu/anaconda3/bin/jupyter-notebook", line 11, in <module>
+    sys.exit(main())
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/jupyter_core/application.py", line 267, in launch_instance
+    return super(JupyterApp, cls).launch_instance(argv=argv, **kwargs)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/traitlets/config/application.py", line 658, in launch_instance
+    app.start()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/notebookapp.py", line 1417, in start
+    self.io_loop.start()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/zmq/eventloop/ioloop.py", line 177, in start
+    super(ZMQIOLoop, self).start()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/ioloop.py", line 832, in start
+    self._run_callback(self._callbacks.popleft())
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/ioloop.py", line 605, in _run_callback
+    ret = callback()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/stack_context.py", line 277, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 1152, in inner
+    self.run()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 1069, in run
+    yielded = self.gen.send(value)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/http1connection.py", line 238, in _read_message
+    delegate.finish()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/routing.py", line 251, in finish
+    self.delegate.finish()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/web.py", line 2096, in finish
+    self.execute()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/web.py", line 2129, in execute
+    **self.path_kwargs)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 307, in wrapper
+    yielded = next(result)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 319, in wrapper
+    _futures_to_runners[future] = Runner(result, future, yielded)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 1003, in __init__
+    self.run()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/gen.py", line 1063, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/base/handlers.py", line 534, in wrapper
+    self.finish(json.dumps(reply))
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/base/handlers.py", line 449, in finish
+    return super(APIHandler, self).finish(*args, **kwargs)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/web.py", line 993, in finish
+    self._log()
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/web.py", line 1540, in _log
+    self.application.log_request(self)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/tornado/web.py", line 2053, in log_request
+    self.settings["log_function"](handler)
+  File "/home/ubuntu/anaconda3/lib/python3.6/site-packages/notebook/log.py", line 47, in log_request
+    log_method(msg.format(**ns))
+Message: '500 GET /api/contents/NYC_Traffic_Analysis_Using_Taxi_Data/Data/GettingData.ipynb?type=notebook&_=1521240020237 (69.38.215.124) 4.70ms referer=https://ec2-54-193-57-243.us-west-1.compute.amazonaws.com:8888/notebooks/NYC_Traffic_Analysis_Using_Taxi_Data/Data/GettingData.ipynb'
+Arguments: ()
+[W 23:18:09.505 NotebookApp] SSL Error on 10 ('103.236.252.88', 1054): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:777)
+[W 23:18:09.939 NotebookApp] SSL Error on 10 ('103.236.252.88', 1114): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:777)
+[W 23:18:10.373 NotebookApp] SSL Error on 10 ('103.236.252.88', 1190): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:777)
+[W 23:18:10.809 NotebookApp] SSL Error on 10 ('103.236.252.88', 1245): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:777)
+[I 23:30:16.371 NotebookApp] Adapting to protocol v5.1 for kernel c67ddfe5-6c5e-4fbe-bf52-7a602a834722
+[I 23:36:12.397 NotebookApp] Kernel shutdown: c67ddfe5-6c5e-4fbe-bf52-7a602a834722
+[C 23:59:33.867 NotebookApp] received signal 15, stopping
+[I 23:59:33.868 NotebookApp] Shutting down kernels
