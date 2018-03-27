@@ -1,4 +1,7 @@
-# Coordinate-neighborhood mapping
+# 
 
+demography data
+http://furmancenter.org/neighborhoods/view/washington-heights-inwood
 
-This folder contains the code and GeoJson file needed to map trip coordinates to neighborhoods. Please note that if you plan to run this code on a full year's worth of taxi data you *not recommend* doing so your local computer. 
+weather data
+https://www.wunderground.com/weather/api/d/docs?d=data/history&MR=1
