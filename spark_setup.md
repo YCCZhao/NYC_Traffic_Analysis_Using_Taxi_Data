@@ -16,12 +16,14 @@ mkdir ~/server
 cd ~/server
 wget http://mirror.reverse.net/pub/apache/spark/spark-2.3.0/spark-2.3.0-bin-hadoop2.7.tgz
 tar xvzf spark-2.3.0-bin-hadoop2.7.tgz
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/```
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
+```
 
 5. start master node:
 do the following in the master instance
 ```cd ~/server
-./spark-2.1.0-bin-hadoop2.7/sbin/start-master.sh```
+./spark-2.1.0-bin-hadoop2.7/sbin/start-master.sh
+```
  
 6. then a spark job is started. Job status is shown in IP.address:8080.
 ex: mine is ec2-13-57-247-150.us-west-1.compute.amazonaws.com:8080
@@ -30,4 +32,5 @@ Once you are in that page, copy the address start with spark://.....
 7. Now start the worker nodes:
 do the following in the worker instances
 ```cd ~/server
-./spark-2.3.0-bin-hadoop2.7/sbin/start-slave.sh spark://...``` 
+./spark-2.3.0-bin-hadoop2.7/sbin/start-slave.sh spark://...
+``` 
